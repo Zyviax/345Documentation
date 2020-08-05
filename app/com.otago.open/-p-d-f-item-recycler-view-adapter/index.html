@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PDFItemRecyclerViewAdapter - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.otago.open</a>&nbsp;/&nbsp;<a href="./index.html">PDFItemRecyclerViewAdapter</a><br/>
+<br/>
+<h1>PDFItemRecyclerViewAdapter</h1>
+<code><span class="keyword">class </span><span class="identifier">PDFItemRecyclerViewAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Adapter</span><span class="symbol">&lt;</span><span class="identifier">ViewHolder</span><span class="symbol">&gt;</span></code>
+<p>A standard <a href="#">RecyclerView.Adapter</a> to display PDF items.
+The adapter binds the view holders to their data.</p>
+<h3>Parameters</h3>
+<p><a name="list"></a>
+<code>list</code> - The list of <a href="../-p-d-f-item/index.html">PDFItem</a>s</p>
+<p><a name="listener"></a>
+<code>listener</code> - The function to execute if a PDF is selected</p>
+<p><strong>See Also</strong><br/>
+<p><a href="./index.html">PDFItemRecyclerViewAdapter</a></p>
+<p><a href="../-p-d-f-list-fragment/index.html">PDFListFragment</a></p>
+</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-view-holder/index.html">ViewHolder</a></h4>
+</td>
+<td>
+<p>The <a href="#">RecyclerView.ViewHolder</a> to bind <a href="../-p-d-f-item/index.html">PDFItem</a>s to recycler entries</p>
+<code><span class="keyword">class </span><span class="identifier">ViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>A standard <a href="#">RecyclerView.Adapter</a> to display PDF items.
+The adapter binds the view holders to their data.</p>
+<code><span class="identifier">PDFItemRecyclerViewAdapter</span><span class="symbol">(</span><span class="identifier" id="com.otago.open.PDFItemRecyclerViewAdapter$<init>(kotlin.collections.List((com.otago.open.PDFItem)), kotlin.Function1((com.otago.open.PDFItem, kotlin.Unit)))/list">list</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-p-d-f-item/index.html"><span class="identifier">PDFItem</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.otago.open.PDFItemRecyclerViewAdapter$<init>(kotlin.collections.List((com.otago.open.PDFItem)), kotlin.Function1((com.otago.open.PDFItem, kotlin.Unit)))/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="../-p-d-f-item/index.html"><span class="identifier">PDFItem</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="get-item-count.html">getItemCount</a></h4>
+</td>
+<td>
+<p>Gets the amount of items in this recycler</p>
+<code><span class="keyword">fun </span><span class="identifier">getItemCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-bind-view-holder.html">onBindViewHolder</a></h4>
+</td>
+<td>
+<p>Handles the binding of the <a href="-view-holder/index.html">ViewHolder</a> to a <a href="../-p-d-f-item/index.html">PDFItem</a></p>
+<code><span class="keyword">fun </span><span class="identifier">onBindViewHolder</span><span class="symbol">(</span><span class="identifier" id="com.otago.open.PDFItemRecyclerViewAdapter$onBindViewHolder(com.otago.open.PDFItemRecyclerViewAdapter.ViewHolder, kotlin.Int)/holder">holder</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">, </span><span class="identifier" id="com.otago.open.PDFItemRecyclerViewAdapter$onBindViewHolder(com.otago.open.PDFItemRecyclerViewAdapter.ViewHolder, kotlin.Int)/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-create-view-holder.html">onCreateViewHolder</a></h4>
+</td>
+<td>
+<p>Entry point of <a href="./index.html">PDFItemRecyclerViewAdapter</a>.</p>
+<code><span class="keyword">fun </span><span class="identifier">onCreateViewHolder</span><span class="symbol">(</span><span class="identifier" id="com.otago.open.PDFItemRecyclerViewAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/parent">parent</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">, </span><span class="identifier" id="com.otago.open.PDFItemRecyclerViewAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/viewType">viewType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ViewHolder</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
