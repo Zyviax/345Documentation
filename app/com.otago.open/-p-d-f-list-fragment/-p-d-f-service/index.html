@@ -8,81 +8,41 @@
 <a href="../../../index.html">app</a>&nbsp;/&nbsp;<a href="../../index.html">com.otago.open</a>&nbsp;/&nbsp;<a href="../index.html">PDFListFragment</a>&nbsp;/&nbsp;<a href="./index.html">PDFService</a><br/>
 <br/>
 <h1>PDFService</h1>
-<code><span class="keyword">object </span><span class="identifier">PDFService</span></code>
+<code><span class="keyword">class </span><span class="identifier">PDFService</span></code>
 <p>Coordinates fetching and downloading PDF files from a url.
 Use <a href="start-service.html">PDFService.startService</a> to begin coroutines will fetch,
 and then download each PDF.</p>
-<h3>Functions</h3>
+<h3>Constructors</h3>
 <table>
 <tbody>
 <tr>
 <td>
-<h4><a href="cancel-service.html">cancelService</a></h4>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
 </td>
 <td>
-<p>Function to cancel this service, e.g. if we are navigating away</p>
-<code><span class="keyword">fun </span><span class="identifier">cancelService</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+<p>Coordinates fetching and downloading PDF files from a url.
+Use <a href="start-service.html">PDFService.startService</a> to begin coroutines will fetch,
+and then download each PDF.</p>
+<code><span class="identifier">PDFService</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
 </tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
 <tr>
 <td>
-<h4><a href="create-meta-file.html">createMetaFile</a></h4>
+<h4><a href="is-active.html">isActive</a></h4>
 </td>
 <td>
-<p>Creates a meta file for the file indicated via <a href="create-meta-file.html#com.otago.open.PDFListFragment.PDFService$createMetaFile(kotlin.String, kotlin.String, com.otago.open.PDFListFragment.FetchResult)/saveFolder">saveFolder</a> and <a href="create-meta-file.html#com.otago.open.PDFListFragment.PDFService$createMetaFile(kotlin.String, kotlin.String, com.otago.open.PDFListFragment.FetchResult)/fileName">fileName</a>
-based on the <a href="create-meta-file.html#com.otago.open.PDFListFragment.PDFService$createMetaFile(kotlin.String, kotlin.String, com.otago.open.PDFListFragment.FetchResult)/it">FetchResult</a></p>
-<code><span class="keyword">fun </span><span class="identifier">createMetaFile</span><span class="symbol">(</span><span class="identifier" id="com.otago.open.PDFListFragment.PDFService$createMetaFile(kotlin.String, kotlin.String, com.otago.open.PDFListFragment.FetchResult)/saveFolder">saveFolder</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.otago.open.PDFListFragment.PDFService$createMetaFile(kotlin.String, kotlin.String, com.otago.open.PDFListFragment.FetchResult)/fileName">fileName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.otago.open.PDFListFragment.PDFService$createMetaFile(kotlin.String, kotlin.String, com.otago.open.PDFListFragment.FetchResult)/it">it</span><span class="symbol">:</span>&nbsp;<span class="identifier">FetchResult</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+<p>Whether the current coroutine is running</p>
+<code><span class="keyword">val </span><span class="identifier">isActive</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
-<tr>
-<td>
-<h4><a href="determine-path.html">determinePath</a></h4>
-</td>
-<td>
-<p>Determines where a <a href="determine-path.html#com.otago.open.PDFListFragment.PDFService$determinePath(kotlin.String, kotlin.String)/href">href</a> on a page given by <a href="determine-path.html#com.otago.open.PDFListFragment.PDFService$determinePath(kotlin.String, kotlin.String)/onPageUrl">onPageUrl</a> should point, if <a href="determine-path.html#com.otago.open.PDFListFragment.PDFService$determinePath(kotlin.String, kotlin.String)/onPageUrl">onPageUrl</a> is
-a file (i.e. no forward slash), otherwise when in the folder given by <a href="determine-path.html#com.otago.open.PDFListFragment.PDFService$determinePath(kotlin.String, kotlin.String)/onPageUrl">onPageUrl</a> it determines
-where the sub-resource would be located</p>
-<code><span class="keyword">fun </span><span class="identifier">determinePath</span><span class="symbol">(</span><span class="identifier" id="com.otago.open.PDFListFragment.PDFService$determinePath(kotlin.String, kotlin.String)/onPageUrl">onPageUrl</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.otago.open.PDFListFragment.PDFService$determinePath(kotlin.String, kotlin.String)/href">href</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
-</tr>
-<tr>
-<td>
-<h4><a href="download-file.html">downloadFile</a></h4>
-</td>
-<td>
-<p>Downloads a file at <a href="download-file.html#com.otago.open.PDFListFragment.PDFService$downloadFile(kotlin.String, kotlin.String, kotlin.String)/url">url</a> to the file <a href="download-file.html#com.otago.open.PDFListFragment.PDFService$downloadFile(kotlin.String, kotlin.String, kotlin.String)/parentDir">parentDir</a>/<a href="download-file.html#com.otago.open.PDFListFragment.PDFService$downloadFile(kotlin.String, kotlin.String, kotlin.String)/fileName">fileName</a> using a HTTP GET</p>
-<code><span class="keyword">fun </span><span class="identifier">downloadFile</span><span class="symbol">(</span><span class="identifier" id="com.otago.open.PDFListFragment.PDFService$downloadFile(kotlin.String, kotlin.String, kotlin.String)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.otago.open.PDFListFragment.PDFService$downloadFile(kotlin.String, kotlin.String, kotlin.String)/parentDir">parentDir</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.otago.open.PDFListFragment.PDFService$downloadFile(kotlin.String, kotlin.String, kotlin.String)/fileName">fileName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
-</tr>
-<tr>
-<td>
-<h4><a href="fetch-links.html">fetchLinks</a></h4>
-</td>
-<td>
-<p>Retrieve links from a table containing href elements.</p>
-<code><span class="keyword">fun </span><span class="identifier">fetchLinks</span><span class="symbol">(</span><span class="identifier" id="com.otago.open.PDFListFragment.PDFService$fetchLinks(kotlin.String, kotlin.String, kotlin.Boolean)/parentFolder">parentFolder</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.otago.open.PDFListFragment.PDFService$fetchLinks(kotlin.String, kotlin.String, kotlin.Boolean)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.otago.open.PDFListFragment.PDFService$fetchLinks(kotlin.String, kotlin.String, kotlin.Boolean)/doFolders">doFolders</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><span class="identifier">FetchResult</span><span class="symbol">&gt;</span></code></td>
-</tr>
-<tr>
-<td>
-<h4><a href="generate-pdf-items.html">generatePdfItems</a></h4>
-</td>
-<td>
-<p>Creates <a href="../../-p-d-f-item/index.html">PDFItem</a>s from <a href="../-fetch-result/index.html">FetchResult</a>s by deciding on the pretty name and the icon to use.</p>
-<code><span class="keyword">fun </span><span class="identifier">generatePdfItems</span><span class="symbol">(</span><span class="identifier" id="com.otago.open.PDFListFragment.PDFService$generatePdfItems(kotlin.collections.List((com.otago.open.PDFListFragment.FetchResult)))/fetched">fetched</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><span class="identifier">FetchResult</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../-p-d-f-item/index.html"><span class="identifier">PDFItem</span></a><span class="symbol">&gt;</span></code></td>
-</tr>
-<tr>
-<td>
-<h4><a href="get-resource-item.html">getResourceItem</a></h4>
-</td>
-<td>
-<p>Gets the resource icon from a <a href="../../-file-navigator-type/index.html">FileNavigatorType</a></p>
-<code><span class="keyword">fun </span><span class="identifier">getResourceItem</span><span class="symbol">(</span><span class="identifier" id="com.otago.open.PDFListFragment.PDFService$getResourceItem(com.otago.open.FileNavigatorType)/navType">navType</span><span class="symbol">:</span>&nbsp;<a href="../../-file-navigator-type/index.html"><span class="identifier">FileNavigatorType</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
-</tr>
-<tr>
-<td>
-<h4><a href="load-meta-file.html">loadMetaFile</a></h4>
-</td>
-<td>
-<p>Loads a meta file for the resource <a href="load-meta-file.html#com.otago.open.PDFListFragment.PDFService$loadMetaFile(kotlin.String)/assFile">assFile</a> (associated file), i.e. the loaded meta file
-will be <a href="load-meta-file.html#com.otago.open.PDFListFragment.PDFService$loadMetaFile(kotlin.String)/assFile">assFile</a>.meta</p>
-<code><span class="keyword">fun </span><span class="identifier">loadMetaFile</span><span class="symbol">(</span><span class="identifier" id="com.otago.open.PDFListFragment.PDFService$loadMetaFile(kotlin.String)/assFile">assFile</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">FetchResult</span></code></td>
-</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
 <tr>
 <td>
 <h4><a href="start-service.html">startService</a></h4>
