@@ -17,6 +17,14 @@ and then download each PDF.</p>
 <tbody>
 <tr>
 <td>
+<h4><a href="cancel-service.html">cancelService</a></h4>
+</td>
+<td>
+<p>Function to cancel this service, e.g. if we are navigating away</p>
+<code><span class="keyword">fun </span><span class="identifier">cancelService</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
 <h4><a href="create-meta-file.html">createMetaFile</a></h4>
 </td>
 <td>
@@ -39,6 +47,7 @@ where the sub-resource would be located</p>
 <h4><a href="download-file.html">downloadFile</a></h4>
 </td>
 <td>
+<p>Downloads a file at <a href="download-file.html#com.otago.open.PDFListFragment.PDFService$downloadFile(kotlin.String, kotlin.String, kotlin.String)/url">url</a> to the file <a href="download-file.html#com.otago.open.PDFListFragment.PDFService$downloadFile(kotlin.String, kotlin.String, kotlin.String)/parentDir">parentDir</a>/<a href="download-file.html#com.otago.open.PDFListFragment.PDFService$downloadFile(kotlin.String, kotlin.String, kotlin.String)/fileName">fileName</a> using a HTTP GET</p>
 <code><span class="keyword">fun </span><span class="identifier">downloadFile</span><span class="symbol">(</span><span class="identifier" id="com.otago.open.PDFListFragment.PDFService$downloadFile(kotlin.String, kotlin.String, kotlin.String)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.otago.open.PDFListFragment.PDFService$downloadFile(kotlin.String, kotlin.String, kotlin.String)/parentDir">parentDir</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.otago.open.PDFListFragment.PDFService$downloadFile(kotlin.String, kotlin.String, kotlin.String)/fileName">fileName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
 </tr>
 <tr>
@@ -54,6 +63,7 @@ where the sub-resource would be located</p>
 <h4><a href="get-resource-item.html">getResourceItem</a></h4>
 </td>
 <td>
+<p>Gets the resource icon from a <a href="../../-file-navigator-type/index.html">FileNavigatorType</a></p>
 <code><span class="keyword">fun </span><span class="identifier">getResourceItem</span><span class="symbol">(</span><span class="identifier" id="com.otago.open.PDFListFragment.PDFService$getResourceItem(com.otago.open.FileNavigatorType)/navType">navType</span><span class="symbol">:</span>&nbsp;<a href="../../-file-navigator-type/index.html"><span class="identifier">FileNavigatorType</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
 </tr>
 <tr>
@@ -61,6 +71,8 @@ where the sub-resource would be located</p>
 <h4><a href="load-meta-file.html">loadMetaFile</a></h4>
 </td>
 <td>
+<p>Loads a meta file for the resource <a href="load-meta-file.html#com.otago.open.PDFListFragment.PDFService$loadMetaFile(kotlin.String)/assFile">assFile</a> (associated file), i.e. the loaded meta file
+will be <a href="load-meta-file.html#com.otago.open.PDFListFragment.PDFService$loadMetaFile(kotlin.String)/assFile">assFile</a>.meta</p>
 <code><span class="keyword">fun </span><span class="identifier">loadMetaFile</span><span class="symbol">(</span><span class="identifier" id="com.otago.open.PDFListFragment.PDFService$loadMetaFile(kotlin.String)/assFile">assFile</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">FetchResult</span></code></td>
 </tr>
 <tr>
