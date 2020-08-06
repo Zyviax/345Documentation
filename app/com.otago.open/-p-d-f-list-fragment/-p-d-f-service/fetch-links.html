@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PDFListFragment.PDFService.fetchLinks - app</title>
+<link rel="stylesheet" href="../../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../../index.html">app</a>&nbsp;/&nbsp;<a href="../../index.html">com.otago.open</a>&nbsp;/&nbsp;<a href="../index.html">PDFListFragment</a>&nbsp;/&nbsp;<a href="index.html">PDFService</a>&nbsp;/&nbsp;<a href="./fetch-links.html">fetchLinks</a><br/>
+<br/>
+<h1>fetchLinks</h1>
+<a name="com.otago.open.PDFListFragment.PDFService$fetchLinks(kotlin.String, kotlin.String, kotlin.Boolean)"></a>
+<code><span class="keyword">fun </span><span class="identifier">fetchLinks</span><span class="symbol">(</span><span class="identifier" id="com.otago.open.PDFListFragment.PDFService$fetchLinks(kotlin.String, kotlin.String, kotlin.Boolean)/parentFolder">parentFolder</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.otago.open.PDFListFragment.PDFService$fetchLinks(kotlin.String, kotlin.String, kotlin.Boolean)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.otago.open.PDFListFragment.PDFService$fetchLinks(kotlin.String, kotlin.String, kotlin.Boolean)/doFolders">doFolders</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><span class="identifier">FetchResult</span><span class="symbol">&gt;</span></code>
+<p>Retrieve links from a table containing href elements.</p>
+<h3>Parameters</h3>
+<p><a name="parentFolder"></a>
+<code>parentFolder</code> - The folder in which the downloaded content will be stored</p>
+<p><a name="url"></a>
+<code>url</code> - The URL at which we will look for folders and PDFs etc</p>
+<p><a name="doFolders"></a>
+<code>doFolders</code> - Whether we want to include folders. Currently this should only be true if paperSubName is "" or "index.php" due to the COSC website navigation structure</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../../-p-d-f-item/index.html">PDFItem</a></p>
+</p>
+<p><strong>Return</strong><br/>
+The list of <a href="../-fetch-result/index.html">FetchResult</a>s for each PDF (or folder if <a href="fetch-links.html#com.otago.open.PDFListFragment.PDFService$fetchLinks(kotlin.String, kotlin.String, kotlin.Boolean)/doFolders">doFolders</a> is true) on the page</p>
+</BODY>
+</HTML>
