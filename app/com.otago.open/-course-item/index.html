@@ -9,7 +9,7 @@
 <br/>
 <h1>CourseItem</h1>
 <code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">CourseItem</span></code>
-<p>Data Class for the Course items in the <a href="../-fetch-fragment/index.html">FetchFragment</a></p>
+<p>Data Class for the Course items in the <a href="../-select-fragment/index.html">SelectFragment</a></p>
 <h3>Parameters</h3>
 <p><a name="imageResource"></a>
 <code>imageResource</code> - The image from the project to use</p>
@@ -19,6 +19,8 @@
 <code>courseUrl</code> - The (probable) url to the course web-page, e.g. https://cs.otago.ac.nz/cosc345</p>
 <p><a name="courseCode"></a>
 <code>courseCode</code> - The paper code for the given course</p>
+<p><a name="selected"></a>
+<code>selected</code> - Whether the paper should appear selected in the course list</p>
 <h3>Constructors</h3>
 <table>
 <tbody>
@@ -27,8 +29,8 @@
 <h4><a href="-init-.html">&lt;init&gt;</a></h4>
 </td>
 <td>
-<p>Data Class for the Course items in the <a href="../-fetch-fragment/index.html">FetchFragment</a></p>
-<code><span class="identifier">CourseItem</span><span class="symbol">(</span><span class="identifier" id="com.otago.open.CourseItem$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String)/imageResource">imageResource</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.otago.open.CourseItem$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String)/courseName">courseName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.otago.open.CourseItem$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String)/courseUrl">courseUrl</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.otago.open.CourseItem$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String)/courseCode">courseCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span></code></td>
+<p>Data Class for the Course items in the <a href="../-select-fragment/index.html">SelectFragment</a></p>
+<code><span class="identifier">CourseItem</span><span class="symbol">(</span><span class="identifier" id="com.otago.open.CourseItem$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean)/imageResource">imageResource</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.otago.open.CourseItem$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean)/courseName">courseName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.otago.open.CourseItem$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean)/courseUrl">courseUrl</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.otago.open.CourseItem$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean)/courseCode">courseCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.otago.open.CourseItem$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean)/selected">selected</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -66,6 +68,14 @@
 <td>
 <p>The image from the project to use</p>
 <code><span class="keyword">val </span><span class="identifier">imageResource</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="selected.html">selected</a></h4>
+</td>
+<td>
+<p>Whether the paper should appear selected in the course list</p>
+<code><span class="keyword">var </span><span class="identifier">selected</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
 </tr>
 </tbody>
 </table>
